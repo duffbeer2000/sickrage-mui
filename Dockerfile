@@ -21,8 +21,8 @@ RUN apt-get install -qy python python-cheetah ca-certificates wget unrar
 
 # Install SickBeard
 RUN mkdir /opt/sickbeard
-RUN wget https://github.com/cytec/Sick-Beard/archive/master.zip -O /tmp/sickbeard.tar.gz
-RUN tar -C /opt/sickbeard -xvf /tmp/sickbeard.tar.gz --strip-components 1
+RUN wget https://github.com/cytec/Sick-Beard/tarball/6c60e5e35f9b636563c8cf28b1225ea2ba26366a -O /tmp/midgetspy-SickBeard-0e81fe9baf.tar.gz
+RUN tar -C /opt/sickbeard -xvf /tmp/midgetspy-SickBeard-0e81fe9baf.tar.gz --strip-components 1
 RUN chown nobody:users /opt/sickbeard
 
 EXPOSE 8081
