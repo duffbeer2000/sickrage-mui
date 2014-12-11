@@ -6,6 +6,6 @@ if [ -z "$EDGE" ]; then
 else
   apt-get install -qy git
   rm -rf /opt/sickbeard
-  git clone https://github.com/midgetspy/Sick-Beard.git /opt/sickbeard
+  git clone https://github.com/cytec/Sick-Beard.git /opt/sickbeard
   chown -R nobody:users /opt/sickbeard
 fi
