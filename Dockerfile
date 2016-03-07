@@ -20,10 +20,10 @@ RUN apt-get update -q
 RUN apt-get install -qy python python-cheetah ca-certificates wget unrar
 
 # Install SickBeard
-RUN mkdir /opt/sickbeard
-RUN wget https://github.com/cytec/Sick-Beard/tarball/6c60e5e35f9b636563c8cf28b1225ea2ba26366a -O /tmp/midgetspy-SickBeard-0e81fe9baf.tar.gz
-RUN tar -C /opt/sickbeard -xvf /tmp/midgetspy-SickBeard-0e81fe9baf.tar.gz --strip-components 1
-RUN chown nobody:users /opt/sickbeard
+RUN mkdir /opt/sickrage
+RUN wget https://github.com/cytec/SickRage/tarball/3baef95a82971725063807f57fa545c61a305758 -O /tmp/cytec-SickRage-v4.0.75.3-0-g3baef95.tar
+RUN tar -C /opt/sickbeard -xvf /tmpcytec-SickRage-v4.0.75.3-0-g3baef95.tar --strip-components 1
+RUN chown nobody:users /opt/sickrage
 
 EXPOSE 8081
 
