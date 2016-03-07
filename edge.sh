@@ -5,7 +5,7 @@ if [ -z "$EDGE" ]; then
   echo "Bleeding edge not requested"
 else
   apt-get install -qy git
-  rm -rf /opt/sickbeard
+  rm -rf /opt/sickrage
   git clone https://github.com/cytec/SickRage.git /opt/sickrage
   chown -R nobody:users /opt/sickrage
 fi
