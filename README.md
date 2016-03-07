@@ -1,4 +1,4 @@
-This is a Dockerfile setup for sickbeard(non englisch series) - http://sickbeard.com/
+This is a Dockerfile setup for sickrage(non englisch series) - http://sickrage.com/
 
 To run:
 
